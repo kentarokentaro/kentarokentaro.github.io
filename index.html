@@ -3,12 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>こよみっこ — 親子であそぶ 季節行事アプリ</title>
-<meta name="description" content="こよみっこは、季節の行事を小さなゲームで体験する、親子向けの iPhone アプリシリーズです。こいのぼり、梅雨、七夕、夏休み、お月見。毎月ひとつずつ。">
-<meta property="og:title" content="こよみっこ — 親子であそぶ 季節行事アプリ">
-<meta property="og:description" content="季節の行事を小さなゲームで体験する、親子向けのアプリシリーズ。">
+<title>K2 DEV — アプリ一覧</title>
+<meta name="description" content="K2 DEV（個人開発）のアプリ。親子であそぶ季節行事アプリ「こよみっこ」シリーズ、ポモドーロで農園を育てる Pomo Land、Mac の集中アプリ ClearMind。">
+<meta property="og:title" content="K2 DEV — アプリ一覧">
 <meta property="og:image" content="https://kentarokentaro.github.io/assets/logo_tagline.png">
-<meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@K2AppDev">
 <link rel="icon" href="assets/icons/otsukimi.png">
@@ -18,97 +16,61 @@
   :root { --cream:#FFF8E7; --ink:#2E3266; --yellow:#FFD84D; --paper:#fff; --muted:#6b6f8a; }
   * { box-sizing:border-box; }
   body { margin:0; background:var(--cream); color:var(--ink); font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Sans",sans-serif; line-height:1.8; }
-  main { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
-  header { text-align:center; padding:24px 0 8px; }
-  header img { width:min(320px,80%); height:auto; }
-  header p.tag { margin:8px 0 0; font-weight:700; font-size:1.05rem; }
-  header p.lead { margin:14px auto 0; max-width:34em; color:var(--muted); font-size:.95rem; }
-  h2 { font-size:1.15rem; margin:40px 0 12px; border-left:6px solid var(--yellow); padding-left:12px; }
-  ul.cards { list-style:none; margin:0; padding:0; display:grid; gap:14px; }
-  .card { display:flex; gap:16px; align-items:flex-start; background:var(--paper); border-radius:20px; padding:16px; box-shadow:0 2px 10px rgba(46,50,102,.06); }
-  .card img { width:84px; height:84px; border-radius:20px; flex:none; }
-  .card h3 { margin:2px 0 4px; font-size:1.1rem; }
-  .card .ev { margin:0; font-size:.8rem; color:var(--muted); font-weight:700; }
-  .card .copy { margin:0 0 8px; font-size:.95rem; }
-  .card .links { margin:0; font-size:.9rem; }
-  a { color:var(--ink); }
-  a.store { display:inline-block; background:var(--yellow); color:var(--ink); text-decoration:none; font-weight:700; padding:6px 14px; border-radius:999px; }
-  a.sub { margin-left:10px; color:var(--muted); }
-  section.parents p { margin:0 0 10px; }
-  .note { background:var(--paper); border-radius:16px; padding:14px 18px; font-size:.92rem; }
-  footer { margin-top:48px; font-size:.8rem; color:var(--muted); text-align:center; }
+  main { max-width:720px; margin:0 auto; padding:40px 20px 64px; }
+  h1 { font-size:1.6rem; margin:0 0 4px; letter-spacing:.04em; }
+  p.lead { margin:0 0 28px; color:var(--muted); font-size:.95rem; }
+  .block { background:var(--paper); border-radius:24px; padding:22px; margin:0 0 18px; box-shadow:0 2px 10px rgba(46,50,102,.06); }
+  .block h2 { margin:0 0 8px; font-size:1.2rem; }
+  .block .sub { margin:0 0 12px; color:var(--muted); font-size:.92rem; }
+  .row { display:flex; gap:14px; align-items:center; }
+  .row img { width:72px; height:72px; border-radius:18px; flex:none; }
+  .logo { width:min(260px,70%); height:auto; display:block; margin:4px 0 8px; }
+  a.btn { display:inline-block; background:var(--yellow); color:var(--ink); text-decoration:none; font-weight:700; padding:7px 16px; border-radius:999px; }
+  a.sub { margin-left:10px; color:var(--muted); font-size:.9rem; }
+  .icons { display:flex; gap:8px; margin:6px 0 12px; }
+  .icons img { width:44px; height:44px; border-radius:11px; }
+  footer { margin-top:40px; font-size:.8rem; color:var(--muted); text-align:center; }
   footer a { color:var(--muted); }
 </style>
 </head>
 <body>
 <main>
-  <header>
-    <img src="assets/logo.png" alt="こよみっこ">
-    <p class="tag">親子であそぶ 季節行事アプリ</p>
-    <p class="lead">こいのぼり、梅雨、七夕、夏休み、お月見。季節の行事を、指一本で遊べる小さなゲームにしました。やさしいことばと、指一本の操作。叱らない・急かさない作りを心がけています。</p>
-  </header>
+  <h1>K2 DEV</h1>
+  <p class="lead">個人で作っている iPhone・Mac のアプリです。</p>
 
-  <h2>アプリ（公開順）</h2>
-  <ul class="cards">
-      <li class="card">
-        <img src="assets/icons/koinobore.png" alt="" width="96" height="96">
-        <div>
-          <p class="ev">端午の節句（5月5日）</p>
-          <h3>こいのぼれ！</h3>
-          <p class="copy">こいのぼりになって、風にのって泳ぐ</p>
-          <p class="links"><a class="store" href="https://apps.apple.com/jp/app/id6761687212?ct=hp">App Store で見る</a> <a class="sub" href="https://kentarokentaro.github.io/koinobore-support/">サポート</a></p>
-        </div>
-      </li>
-      <li class="card">
-        <img src="assets/icons/punimoru.png" alt="" width="96" height="96">
-        <div>
-          <p class="ev">梅雨（6月）</p>
-          <h3>ぷにもる</h3>
-          <p class="copy">雨の日の おうちで、ぷにぷにを育てる</p>
-          <p class="links"><a class="store" href="https://apps.apple.com/jp/app/id6779113449?ct=hp">App Store で見る</a> <a class="sub" href="https://kentarokentaro.github.io/punimoru-support/">サポート</a></p>
-        </div>
-      </li>
-      <li class="card">
-        <img src="assets/icons/tanabata.png" alt="" width="96" height="96">
-        <div>
-          <p class="ev">七夕（7月7日）</p>
-          <h3>七夕ものがたり</h3>
-          <p class="copy">天の川を かけぬけて、ねがいを届ける</p>
-          <p class="links"><a class="store" href="https://apps.apple.com/jp/app/id6785191108?ct=hp">App Store で見る</a> <a class="sub" href="https://kentarokentaro.github.io/tanabata-support/">サポート</a></p>
-        </div>
-      </li>
-      <li class="card">
-        <img src="assets/icons/natsukappa.png" alt="" width="96" height="96">
-        <div>
-          <p class="ev">夏休み・お盆（8月）</p>
-          <h3>夏かっぱ</h3>
-          <p class="copy">かっぱと ひと夏のおつかい</p>
-          <p class="links"><a class="store" href="https://apps.apple.com/jp/app/id6801736323?ct=hp">App Store で見る</a> <a class="sub" href="https://kentarokentaro.github.io/natsukappa-support/">サポート</a></p>
-        </div>
-      </li>
-      <li class="card">
-        <img src="assets/icons/otsukimi.png" alt="" width="96" height="96">
-        <div>
-          <p class="ev">十五夜（9月・お月見）</p>
-          <h3>おつきみジャンプ</h3>
-          <p class="copy">うさぎになって 雲を跳び、お月さままで</p>
-          <p class="links"><a class="store" href="https://apps.apple.com/jp/app/id6806738101?ct=hp">App Store で見る</a> <a class="sub" href="https://kentarokentaro.github.io/otsukimi-jump-support/">サポート</a></p>
-        </div>
-      </li>
-  </ul>
+  <section class="block">
+    <img class="logo" src="assets/logo.png" alt="こよみっこ">
+    <h2>こよみっこ — 親子であそぶ 季節行事アプリ</h2>
+    <p class="sub">こいのぼり、梅雨、七夕、夏休み、お月見。季節の行事を小さなゲームで体験する、親子向けのシリーズ。毎月ひとつ。</p>
+    <div class="icons">
+      <img src="assets/icons/koinobore.png" alt=""><img src="assets/icons/punimoru.png" alt=""><img src="assets/icons/tanabata.png" alt=""><img src="assets/icons/natsukappa.png" alt=""><img src="assets/icons/otsukimi.png" alt="">
+    </div>
+    <a class="btn" href="koyomikko/">シリーズのページへ</a>
+  </section>
 
-  <section class="parents">
-    <h2>おうちのかたへ</h2>
-    <p>新しい作品から順に、「こどもモード」と「ふつうモード」の2つを備えています。こどもモードは失敗がなく、最後まで一人で遊びきれます。ふつうモードは少しだけ手ごたえがあり、親子で交代しながら遊べます。</p>
-    <p>広告はできるだけ少なく、あそびの途中をさえぎらない場所に置くようにしています。課金はありません。お子さまの情報を集めることもしていません。</p>
-    <p>行事の由来は、各アプリの「おうちのかたへ」画面に短くまとめています。遊んだあとの会話の種になればうれしいです。</p>
-    <div class="note">
-      毎月ひとつ、その季節の行事のアプリを出しています。次の行事のこと、遊んだ感想、困ったことは <a href="https://x.com/K2AppDev">X（@K2AppDev）</a> へどうぞ。各アプリの「サポート」からも連絡できます。
+  <section class="block">
+    <div class="row">
+      <div>
+        <h2>Pomo Land</h2>
+        <p class="sub">ポモドーロで集中した時間が、農園を育てる。iPhone・iPad。<strong>近日公開（審査中）</strong></p>
+        <a class="sub" href="https://kentarokentaro.github.io/pomoland-support/">サポート</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="row">
+      <img src="assets/icons/clearmind.png" alt="">
+      <div>
+        <h2>ClearMind</h2>
+        <p class="sub">Mac 用の集中アプリ。</p>
+        <a class="btn" href="https://apps.apple.com/jp/app/clearmind/id6758040662?mt=12">Mac App Store で見る</a>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>こよみっこ ／ K2 DEV（個人開発） ・ <a href="https://x.com/K2AppDev">X</a> ・ 各アプリのプライバシーポリシーはサポートページに掲載しています</p>
+    <p>K2 DEV（個人開発） ・ <a href="https://x.com/K2AppDev">X（@K2AppDev）</a> ・ 各アプリのプライバシーポリシーはサポートページに掲載しています</p>
   </footer>
 </main>
 </body>
