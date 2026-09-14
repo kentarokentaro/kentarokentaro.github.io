@@ -4,10 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>K2 DEV — アプリ一覧</title>
-<meta name="description" content="K2 DEV（個人開発）のアプリ一覧。親子であそぶ季節行事アプリ「こよみっこ」シリーズ、ポモドーロ農園 Pomo Land、Mac の集中タイマー ClearMind。">
+<meta name="description" content="K2 DEV（個人開発）のアプリ。親子であそぶ季節行事アプリ「こよみっこ」シリーズ、ポモドーロで農園を育てる Pomo Land、Mac のジャーナリングアプリ ClearMind。">
 <meta property="og:title" content="K2 DEV — アプリ一覧">
 <meta property="og:image" content="https://kentarokentaro.github.io/assets/logo_tagline.png">
-<link rel="icon" href="/assets/icons/otsukimi.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@K2AppDev">
+<link rel="icon" href="assets/icons/otsukimi.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
 <style>
@@ -15,57 +17,60 @@
   * { box-sizing:border-box; }
   body { margin:0; background:var(--cream); color:var(--ink); font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Sans",sans-serif; line-height:1.8; }
   main { max-width:720px; margin:0 auto; padding:40px 20px 64px; }
-  h1 { font-size:1.6rem; margin:0 0 4px; }
+  h1 { font-size:1.6rem; margin:0 0 4px; letter-spacing:.04em; }
   p.lead { margin:0 0 28px; color:var(--muted); font-size:.95rem; }
-  ul.cards { list-style:none; margin:0; padding:0; display:grid; gap:16px; }
-  .card { display:flex; gap:18px; align-items:center; background:var(--paper); border-radius:20px; padding:18px; box-shadow:0 2px 10px rgba(46,50,102,.06); }
-  .card img { width:84px; height:84px; border-radius:20px; flex:none; }
-  .card.series img { border-radius:0; width:140px; height:auto; }
-  .card h2 { margin:0 0 4px; font-size:1.15rem; }
-  .card p { margin:0 0 8px; font-size:.95rem; }
-  .card .tag { font-size:.8rem; color:var(--muted); font-weight:700; margin:0; }
-  a { color:var(--ink); }
-  a.btn { display:inline-block; background:var(--yellow); color:var(--ink); text-decoration:none; font-weight:700; padding:6px 14px; border-radius:999px; font-size:.9rem; }
+  .block { background:var(--paper); border-radius:24px; padding:22px; margin:0 0 18px; box-shadow:0 2px 10px rgba(46,50,102,.06); }
+  .block h2 { margin:0 0 8px; font-size:1.2rem; }
+  .block .sub { margin:0 0 12px; color:var(--muted); font-size:.92rem; }
+  .row { display:flex; gap:14px; align-items:center; }
+  .row img { width:72px; height:72px; border-radius:18px; flex:none; }
+  .logo { width:min(260px,70%); height:auto; display:block; margin:4px 0 8px; }
+  a.btn { display:inline-block; background:var(--yellow); color:var(--ink); text-decoration:none; font-weight:700; padding:7px 16px; border-radius:999px; }
   a.sub { margin-left:10px; color:var(--muted); font-size:.9rem; }
-  footer { margin-top:48px; font-size:.8rem; color:var(--muted); text-align:center; }
+  .icons { display:flex; gap:8px; margin:6px 0 12px; }
+  .icons img { width:44px; height:44px; border-radius:11px; }
+  footer { margin-top:40px; font-size:.8rem; color:var(--muted); text-align:center; }
   footer a { color:var(--muted); }
 </style>
 </head>
 <body>
 <main>
-  <h1>K2 DEV のアプリ</h1>
-  <p class="lead">個人で作っている iPhone と Mac のアプリです。</p>
-  <ul class="cards">
-    <li class="card series">
-      <img src="/assets/logo.png" alt="こよみっこ">
+  <h1>K2 DEV</h1>
+  <p class="lead">個人で作っている iPhone・Mac のアプリです。</p>
+
+  <section class="block">
+    <img class="logo" src="assets/logo.png" alt="こよみっこ">
+    <h2>こよみっこ — 親子であそぶ 季節行事アプリ</h2>
+    <p class="sub">こいのぼり、梅雨、七夕、夏休み、お月見。季節の行事を小さなゲームで体験する、親子向けのシリーズ。毎月ひとつ。</p>
+    <div class="icons">
+      <img src="assets/icons/koinobore.png" alt=""><img src="assets/icons/punimoru.png" alt=""><img src="assets/icons/tanabata.png" alt=""><img src="assets/icons/natsukappa.png" alt=""><img src="assets/icons/otsukimi.png" alt="">
+    </div>
+    <a class="btn" href="koyomikko/">シリーズのページへ</a>
+  </section>
+
+  <section class="block">
+    <div class="row">
       <div>
-        <p class="tag">iPhone ・ 親子向け ・ 5作公開中</p>
-        <h2>こよみっこ シリーズ</h2>
-        <p>季節の行事を小さなゲームで体験する、親子であそぶアプリ。こいのぼり、梅雨、七夕、夏休み、お月見。毎月ひとつ。</p>
-        <p><a class="btn" href="/koyomikko/">シリーズのページへ</a></p>
-      </div>
-    </li>
-    <li class="card">
-      <img src="/assets/icons/pomoland.png" alt="">
-      <div>
-        <p class="tag">iPhone ・ iPad ・ ポモドーロタイマー</p>
         <h2>Pomo Land</h2>
-        <p>25分の集中を終えるたびに、小さな農園が育っていくポモドーロタイマー。広告なし、登録なし、記録は端末の中だけ。</p>
-        <p><a class="btn" href="https://apps.apple.com/jp/app/id6809070463?ct=hp">App Store で見る</a> <a class="sub" href="https://kentarokentaro.github.io/pomoland-support/">サポート</a></p>
+        <p class="sub">ポモドーロで集中した時間が、農園を育てる。iPhone・iPad。<strong>近日公開（審査中）</strong></p>
+        <a class="sub" href="https://kentarokentaro.github.io/pomoland-support/">サポート</a>
       </div>
-    </li>
-    <li class="card">
-      <img src="/assets/icons/clearmind.png" alt="">
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="row">
+      <img src="assets/icons/clearmind.png" alt="">
       <div>
-        <p class="tag">Mac ・ 集中タイマー</p>
         <h2>ClearMind</h2>
-        <p>Mac のメニューバーで動く、シンプルな集中タイマー。</p>
-        <p><a class="btn" href="https://apps.apple.com/jp/app/id6758040662">Mac App Store で見る</a></p>
+        <p class="sub">「書いて、風にのせて、軽くなる」ミニマルなジャーナリングアプリ。Mac 用。</p>
+        <a class="btn" href="https://apps.apple.com/jp/app/clearmind/id6758040662?mt=12">Mac App Store で見る</a>
       </div>
-    </li>
-  </ul>
+    </div>
+  </section>
+
   <footer>
-    <p>K2 DEV（個人開発） ・ <a href="https://x.com/K2AppDev">X</a> ・ 各アプリのプライバシーポリシーはサポートページに掲載しています</p>
+    <p>K2 DEV（個人開発） ・ <a href="https://x.com/K2AppDev">X（@K2AppDev）</a> ・ 各アプリのプライバシーポリシーはサポートページに掲載しています</p>
   </footer>
 </main>
 </body>
